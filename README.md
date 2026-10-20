@@ -1,6 +1,6 @@
 # dsh-sao-animation
 
-**DeepSeek Harness 启动动画插件（刀剑神域 / SAO 风格）** —— 启动时先铺一段 13.6s 的开场，
+**DeepSeek Harness 启动动画插件（刀剑神域 / SAO 风格）** —— 启动时播放刀剑神域连接时动画开场，
 放完自动淡出，不挡你进工作台。
 
 > `LINK START` 倒计时环 → 开始连接 → 闪白 → 彩屑爆裂 → 满屏颜料笔触 → 双环 HUD → `Language` / `DeepSeek` → `Log in_::` → 官方字标收束
