@@ -16,6 +16,8 @@
 
 文案、字号、颜色、音频、跳过快捷键都在 **设置 → SAO启动设置** 里改，改完即时预览。
 
+![设置页](docs/preview/Settings-Page.png)
+
 > 社区作品，**与 DeepSeek 官方无隶属关系**。随动画一起发布的音轨与 30 帧笔触抽帧来自一支
 > 第三方影片，不在本项目的 MIT 授权范围内，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
