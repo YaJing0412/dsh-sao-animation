@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek Harness — Boot Sequence</title>
+<link rel="stylesheet" href="boot.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="fx"></canvas>
+
+  <!-- 00 LINK START -->
+  <div class="layer s-link" id="scLink">
+    <div class="grid"></div>
+    <div class="ls-ring" id="lsRing"><span></span></div>
+    <div class="ls-core" id="lsCore"></div>
+    <div class="ls-count" id="lsCount">00:03</div>
+    <div class="ls-big" id="lsBig">LINK START</div>
+    <div class="ls-mono" id="lsMono">neural link &middot; deepseek harness</div>
+    <div class="ls-prog"><i id="lsProg"></i></div>
+  </div>
+
+  <!-- 01 开始连接 -->
+  <div class="layer s-connect" id="scConnect">
+    <div class="tex"></div>
+    <div class="vign"></div>
+    <div class="link-mark" id="linkMark"><!--BRAND_SVG--></div>
+    <div class="link-copy">
+      <div class="link-zh" id="linkZh"><span id="linkZhText">开始连接</span><span class="cur"></span></div>
+      <div class="link-mono" id="linkMono"><span id="linkMonoText">establishing link · dsh://local · handshake</span></div>
+    </div>
+  </div>
+
+  <!-- 06/07 HUD -->
+  <div class="layer" id="scHud">
+    <div class="paper" id="paper"></div>
+    <div class="dialwrap" id="dialWrap">
+      <div class="dial dial-a" id="dialA" style="left:-3%;top:61%;width:66%">
+        <div class="band"></div><div class="arcs"></div><div class="ticks"></div>
+        <div class="lane"></div><div class="lane two"></div><div class="lane three"></div>
+        <div class="ring-hole"></div>
+        <div class="dot" style="left:11%;top:44%"></div>
+        <div class="dot" style="left:30%;top:8%"></div>
+        <div class="dot" style="left:86%;top:70%"></div>
+        <div class="dot" style="left:64%;top:93%"></div>
+        <div class="chip" id="chipA">OK</div>
+      </div>
+      <div class="dial dial-b" id="dialB" style="right:-5%;top:32%;width:60%">
+        <div class="band"></div><div class="arcs"></div><div class="ticks"></div>
+        <div class="lane"></div><div class="lane two"></div><div class="lane three"></div>
+        <div class="ring-hole"></div>
+        <div class="dot" style="left:14%;top:66%"></div>
+        <div class="dot" style="left:78%;top:12%"></div>
+        <div class="chip" id="chipB">reasoning</div>
+      </div>
+    </div>
+    <div id="railHost"></div>
+  </div>
+
+  <!-- 08/09 pills + login -->
+  <div class="layer" id="scUi">
+    <div class="pill language" id="pillLang" style="left:22%"><span id="pillLangText">Language</span></div>
+    <div class="pill value" id="pillVal" style="left:39%"><span class="tri"></span><span id="pillValText">DeepSeek</span></div>
+
+    <div class="card login" id="loginCard" style="width:44%;height:24%;padding:0 4%;justify-content:space-between">
+      <div class="lt"><span id="loginTitle">Log in_</span><span class="cur"></span>:</div>
+      <div class="fields">
+        <div class="field">
+          <span id="fieldA">:account</span>
+          <div class="bar b1"><span class="typed" id="accTyped"></span><i class="caret" id="accCaret"></i></div>
+        </div>
+        <div class="field">
+          <span id="fieldB">:api key</span>
+          <div class="bar b2"><span class="typed" id="pwdTyped"></span><i class="caret" id="pwdCaret"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 lockup -->
+  <div class="layer s-lock" id="scLock">
+    <div class="lock-brand" id="lockBrand"><!--BRAND_SVG--></div>
+    <div class="lock-tag" id="lockTag">Everything is a Plugin</div>
+    <div class="lock-bar"><i id="lockBar"></i></div>
+  </div>
+
+  <div class="flash" id="flash"></div>
+  <div class="bloom" id="bloom"></div>
+  <div class="readout" id="readout"></div>
+  <div class="snd-hint" id="sndHint">🔊 点击任意处开启声音</div>
+  <audio id="snd" preload="auto" src="boot-audio.mp3"></audio>
+</div>
+<script src="boot.js"></script>
+</body>
+</html>

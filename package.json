@@ -1,0 +1,62 @@
+{
+  "name": "dsh-sao-animation",
+  "version": "1.3.0",
+  "description": "DSH 启动动画（SAO 风格）：启动时先播 13.6s 开场 —— LINK START 倒计时环 → 开始连接 → 彩屑爆裂 → 满屏颜料笔触 → 双环 HUD → Language/DeepSeek → Log in_ → 官方字标收束。15 行文字可逐行改文案/字号/颜色，可开关声音、自定义跳过快捷键；设置入口：设置 → SAO启动设置。A 13.6s Sword-Art-Online-flavoured boot animation plugin for DeepSeek Harness.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "cordis",
+    "boot",
+    "splash",
+    "startup",
+    "animation",
+    "boot-animation",
+    "sao"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaJing0412/dsh-sao-animation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YaJing0412/dsh-sao-animation/issues"
+  },
+  "homepage": "https://github.com/YaJing0412/dsh-sao-animation",
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js && node --check lib/client-dom.js && node -e \"import('./lib/index.js').then(m => console.log('host half OK:', m.default.name, '| text keys:', m.TEXT_KEYS.length))\""
+  }
+}

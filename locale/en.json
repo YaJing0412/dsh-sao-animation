@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SAO boot animation",
+    "description": "Plays a 13.6s Sword-Art-Online flavoured opening on startup: LINK START countdown ring, connecting, paint-blast, twin-ring HUD, Language/DeepSeek and the Log in_ card. All 15 on-screen strings can be edited per row (text, size, colour), plus sound and a custom skip key."
+  }
+}

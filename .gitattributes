@@ -1,0 +1,17 @@
+# keep the repository line-ending clean across Windows / macOS / Linux
+* text=auto eol=lf
+
+# binary payloads — never touch these
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.mp3  binary
+*.mp4  binary
+*.webp binary
+*.ico  binary
+
+# generated deliverables: keep them out of diffs and language stats
+assets/animation.html         linguist-generated=true -diff
+animation/blades.json         linguist-generated=true -diff
+docs/preview/*.jpg            linguist-documentation=true
+docs/preview/*.gif            linguist-documentation=true

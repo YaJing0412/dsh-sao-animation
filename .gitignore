@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# node / plugin install artifacts
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# build / capture intermediates
+dist/*-silent.mp4
+dist/*.mp4v.mp4
+frames/
+check-*.png
+_profile_*/
+*.log
+
+# editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

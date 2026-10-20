@@ -19,3 +19,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+--------------------------------------------------------------------------
+
+NOTE ON SCOPE / 授权范围说明
+
+The MIT licence above covers the source code, the build and capture tooling and
+this documentation. It does NOT cover third-party material bundled with the
+repository:
+
+  animation/boot-audio.mp3        soundtrack lifted from a third-party video
+  animation/blades.json           30 frames lifted from the same video
+  animation/brand.svg             DeepSeek Harness brand mark
+  assets/animation.html           contains the soundtrack above (base64 inlined)
+  dist/dsh-sao-animation.mp4      contains the soundtrack above
+  docs/preview/boot-preview.gif   contains the soundtrack above
+  docs/preview/*.jpg              contain the lifted frames
+
+Read THIRD_PARTY_NOTICES.md before redistributing or using this commercially.
+
+上面这份 MIT 授权只覆盖本仓库的源代码、构建/截图工具链与文档;**不覆盖**随附的
+第三方素材(音轨、笔触抽帧、官方字标及其衍生成品)。二次分发或商用前请阅读
+THIRD_PARTY_NOTICES.md。
